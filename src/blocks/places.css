@@ -1,0 +1,92 @@
+.places {
+  margin-top: 60px;
+}
+
+.places__elements {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 320px) {
+  .places__elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+p.places__image_likes {
+  color: black;
+  font-weight: bolder;
+  margin: 0;
+  font-size: 15px;
+  font-family: Inter;
+}
+.places__image-container-likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -15px;
+}
+.places__element {
+  max-width: 280px;
+  width: 100%;
+}
+.places__banner {
+  position: relative;
+}
+.places__image {
+  width: 100%;
+  max-width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.places__trash-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.places__info {
+  margin-top: -4px;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.places__title {
+  margin: 0;
+  overflow: hidden;
+  color: #000000;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.profile__add-place {
+  width: 120px;
+  margin-top: 20px;
+}
+.places__like {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: 0;
+}
+.pointer {
+  cursor: pointer;
+}
+.like_active {
+  opacity: 1;
+  background: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/dom/moved_heart-filled.svg)
+    center no-repeat;
+}
+.places__image:hover {
+  cursor: pointer;
+}
