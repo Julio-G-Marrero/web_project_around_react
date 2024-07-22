@@ -3,6 +3,9 @@ import likeSvg from '../images/like.svg'
 import trahsIcom from '../images/Trash.svg'
 import closeIcon from '../images/Close_Icon.png';
 
+import ImagePopup from './ImagePopup'
+
+
 function Card(props) {
   const [selectedCard, setSelectedCard ] = React.useState(false);
   const [overlay, setOverlay ] = React.useState(false);
@@ -37,20 +40,7 @@ function Card(props) {
             </div>
           </div>
         </div>
-        <div className={selectedCard ? "modal-img" : "modal-img disabled"}>
-          <img
-            className="modal-img__src"
-            src={props.imgSrc}
-            alt="img"
-          />
-          <img
-            className="modal-img__close"
-            src={closeIcon}
-            onClick={handleCardClick}
-            alt="close icon"
-          />
-          <p className="modal-img__title"></p>
-        </div>
+        <ImagePopup selected={selectedCard} imgSrc={props.imgSrc} closeIcon={closeIcon} handleCardClick={handleCardClick} />
         <div 
           className={overlay ? 'overlay' : 'overlay disabled'}
           onClick={handleCardClick}

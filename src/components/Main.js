@@ -175,7 +175,7 @@ function Main() {
                     </div>
                 </template>
             </div>
-            <section className="modal modal-img-delete disabled">
+            {/* <section className="modal modal-img-delete disabled">
                 <h2 className="modal__title modal-img-delete__title">¿Estas seguro/a?</h2>
                 <form className="modal__form form" novalidate>
                     <input type="text" name="idCard" className="disabled" />
@@ -187,7 +187,7 @@ function Main() {
                     Si
                     </button>
                 </form>
-            </section>
+            </section> */}
             <section className={modalAddPlace ? 'modal modal-place' : 'modal modal-place disabled'}>
                 <PopupWithForm title="Nuevo Lugar" placeholderFirstInput="Titulo" placeholderSecondInput="Enlace a imagen" saveMessage="Crear"/>
                 <img
@@ -205,14 +205,6 @@ function Main() {
                 onClick={closeAllPopups}
                 alt="close icon"
                 />
-            </section>
-            <section className="modal-img disabled">
-                <img
-                className="modal-img__src"
-                src="<%= require('./images/place__2.png')%>"
-                alt="img"
-                />
-                <p className="modal-img__title"></p>
             </section>
             <div 
                 className={overlay ? 'overlay' : 'overlay disabled'}
