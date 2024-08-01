@@ -79,7 +79,7 @@
 img.profile__avatar-img {
   width: 77%;
   border-radius: 70%;
-  height: 110%;
+  height: 100%;
   object-fit: cover;
   margin-left: 20px;
 }
